@@ -115,7 +115,10 @@ public class SecurityConfig {
 	    CorsConfiguration configuration = new CorsConfiguration();
 
 	    configuration.setAllowedOrigins(
-	            List.of("http://localhost:5174")
+	    		List.of(
+	                    "http://localhost:5174",
+	                    "https://secureemployeemanagementfrontend.onrender.com"
+	            )
 	    );
 
 	    configuration.setAllowedMethods(
